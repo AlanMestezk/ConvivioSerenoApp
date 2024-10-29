@@ -1,6 +1,6 @@
 
-import styles from './Header.module.css'
-import logo from '../../assets/logo/logo.png'
+import styles   from './Header.module.css'
+import logo     from '../../assets/logo/imageLogoIcon.png'
 import { Link } from 'react-router-dom'
 
 
@@ -21,8 +21,8 @@ export const Header: React.FC = ()=>{
                     />
 
                     <div>
-                        <h1 className={styles.title}>Convívio Sereno</h1>
-                        <h1 className={styles.title}>Centro Dia Para Idosos</h1>
+                        <h1 className={styles.title}>‎‎ Convívio Sereno</h1>
+                        <h1 className={styles.title}>‎‎ Centro Dia Para Idosos</h1>
                     </div>
 
 
@@ -37,16 +37,20 @@ export const Header: React.FC = ()=>{
                     <Link to='/' className={styles.buttons}>
                         Home
                     </Link>
+
                     <Link to='/healtNews' className={styles.buttons} >
                         News da Saúde
                     </Link>
+
                     <Link to='/about' className={styles.buttons}>
-                        Sobre
+                        Sobre Nós
                     </Link>
+
                     <Link to='/contact' className={styles.buttons}>
                         Contato
                     </Link>
 
+                    
                 </div>
 
 
