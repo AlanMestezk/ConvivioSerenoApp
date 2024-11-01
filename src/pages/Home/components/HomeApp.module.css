@@ -78,8 +78,15 @@
     font-style: normal;
     color: #2b4a94;
     text-align: center; /* Adiciona esta linha */
+    text-align: justify; /* Alinha o texto à esquerda */
+    white-space: pre-wrap; /* Mantém as quebras de linha como parágrafos */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    width: 50%; /* Ocupa toda a largura do elemento pai */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
   }
   
+
 
 
 /*animation*/
@@ -119,6 +126,7 @@ responsive
 
     .textContent{
         font-size: 10px;
+        
     }
 
 }

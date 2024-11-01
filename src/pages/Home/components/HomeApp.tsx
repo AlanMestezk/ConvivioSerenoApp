@@ -55,6 +55,7 @@ export const HomeApp: React.FC = ()=>{
 
             <Swiper
                 modules={[Navigation, Pagination]}
+                
                 spaceBetween={0}
                 slidesPerView={slidePerView}
                 navigation
@@ -89,13 +90,9 @@ export const HomeApp: React.FC = ()=>{
                     <h2 className={styles.titleContent}>Convívio Sereno</h2>
 
                     <h3 className={styles.textContent}>
-                        O envelhecimento populacional é um fenômeno mundial e crescente, que resulta do aumento da expectativa de vida e da redução das taxas de natalidade. <br /> 
-                        Segundo dados da Organização Mundial da Saúde (OMS), a população global com 60 anos ou mais deve dobrar, passando de 1 bilhão em 2020 para 2,1 bilhões em 2050. <br /> 
-                        Esse crescimento exige políticas públicas e projetos que atendam às necessidades dessa população, proporcionando suporte, inclusão social e qualidade de vida. <br />
-                        Conforme o Instituto Brasileiro de Geografia e Estatística (IBGE), o número de pessoas acima de 65 anos deve triplicar até 2060, correspondendo a aproximadamente 25,5% da população total. <br /> 
-                        Esse contexto demanda ações estruturadas para atender às especificidades dos idosos, garantindo o envelhecimento ativo e saudável. Centros de convivência e centros de dia para idosos surgem como alternativas promissoras para promover não só o bem-estar físico e emocional, mas também a autonomia e a interação social, aspectos essenciais para o envelhecimento saudável. <br />
-                        Diante dessa realidade, o projeto do Convívio Sereno busca oferecer um espaço de cuidado e socialização para pessoas idosas que não necessitam de assistência contínua, <br /> mas que se beneficiam de um ambiente seguro e estimulante.
+                        O envelhecimento populacional é um fenômeno mundial e crescente, que resulta do aumento da expectativa de vida e da redução das taxas de natalidade. Segundo dados da Organização Mundial da Saúde (OMS), a população global com 60 anos ou mais deve dobrar, passando de 1 bilhão em 2020 para 2,1 bilhões em 2050. Esse crescimento exige políticas públicas e projetos que atendam às necessidades dessa população, proporcionando suporte, inclusão social e qualidade de vida. Conforme o Instituto Brasileiro de Geografia e Estatística (IBGE), o número de pessoas acima de 65 anos deve triplicar até 2060, correspondendo a aproximadamente 25,5% da população total. Esse contexto demanda ações estruturadas para atender às especificidades dos idosos, garantindo o envelhecimento ativo e saudável. Centros de convivência e centros de dia para idosos surgem como alternativas promissoras para promover não só o bem-estar físico e emocional, mas também a autonomia e a interação social, aspectos essenciais para o envelhecimento saudável. Diante dessa realidade, o projeto do Convívio Sereno busca oferecer um espaço de cuidado e socialização para pessoas idosas que não necessitam de assistência contínua, mas que se beneficiam de um ambiente seguro e estimulante.
                     </h3>
+
 
 
                 </div>
