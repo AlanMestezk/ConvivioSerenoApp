@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sectionTitle {
+    margin: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 35px;
+    color: #223c77;
+}
+
+.subtitle {
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 18px;
+    color: #223c77;
+}
+
+.contentNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsItem {
+    width: 800px;
+    margin: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(155, 171, 243);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imgNews {
+    width: 280px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.divTitleLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.titleNews {
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 24px;
+    color: #223c77;
+}
+
+.buttonLink {
+    width: 200px;
+    height: 50px;
+    background-color: #2b4a94;
+    color: white;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    cursor: pointer;
+    transition: background-color 0.8s ease, color 0.6s ease;
+    text-decoration: none;
+    margin: 12px;
+    padding: 12px;
+}
+
+.buttonLink:hover {
+    background-color: #af991a;
+    color: #2b4a94;
+}
+
+/* Responsividade para telas de 667px */
+@media only screen and (max-width: 667px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .contentNews {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .newsItem {
+        width: 100%;
+        flex-direction: column;
+        padding: 16px;
+        margin: 10px 0;
+    }
+
+    .imgNews {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .titleNews {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .buttonLink {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+    }
+}

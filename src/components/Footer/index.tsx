@@ -15,7 +15,7 @@ export const Footer: React.FC = ()=>{
 
             <section className={styles.footerSection}>
 
-                <strong className={styles.title}>⟢ CSCDPI © - 2024 all rights reserved ⟣</strong>
+                <strong className={styles.title}>⟣ CSCDPI © - 2024 all rights reserved ⟢</strong>
                 <strong className={styles.title2}>Centro dia para idosos ⧫⧫⧫ Cuidado ⧫⧫⧫ Conforto ⧫⧫⧫ Repouso ⧫⧫⧫ Qualidade ⧫⧫⧫ Acolhimento</strong>
                
 
@@ -24,6 +24,12 @@ export const Footer: React.FC = ()=>{
             <section className={styles.sectionContent}>
                 
                 <div className={styles.divNameEnterprise}>
+
+                    <img 
+                        src={logoCS}
+                        alt="Logo da pagina" 
+                        className={styles.logo}
+                    />
 
                     <strong className={styles.NameEnterprise}>Convívio Sereno</strong>
 

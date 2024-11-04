@@ -118,7 +118,6 @@
 
 @media only screen and (max-width: 667px){
 
-
     .title{
         font-size: 10px;
     }
@@ -133,4 +132,9 @@
         margin: 5px;
         width: 80px;
     }
+
+    .buttons:hover {
+        height: 22px;
+    }
+    
 }
