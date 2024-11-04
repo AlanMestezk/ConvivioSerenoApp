@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
 
 .footer{
-
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     height: 40px; /* Defina a altura desejada */
-    min-height: 10vh;
+    min-height: 12vh;
     flex-grow: 1;
     background: #4b6cb7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -17,15 +16,27 @@
 }
 
 .footerSection{
-    
     display: flex;  
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
 }
 
 .title{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 10px;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.title2{
+    margin-top: 5px;
+    font-size: 9px;
     font-family: "Unbounded", serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -34,9 +45,25 @@
 }
 
 .sectionContent{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.divNameEnterprise{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NameEnterprise{
+    font-size: 16px;
+    color: aliceblue;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
 }
 
 .logo{
@@ -44,9 +71,86 @@
 }
 
 .imgNetWork{
-    width: 30px;
+    width: 10px;
+}
+
+.divNetwork{
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
+.titleNetworks{
+    font-size: 12px;
+    color: aliceblue;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-bottom: 8px;
+}
 
+.divNetworks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
 
+.imgNetWork {
+    width: 23px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: width 0.3s ease; /* Transição suave de 0.3 segundos */
+}
+  
+.imgNetWork:hover {
+    width: 25px;
+}
+  
+
+/*Responsive*/
+
+@media only screen and (max-width: 1700px){
+
+    .footer{
+
+        height: 20px;
+        min-height: 15vh;
+
+    }
+    
+}
+
+@media only screen and (max-width: 667px){
+
+    .footer{
+
+        height: 20px;
+        min-height: 18vh;
+
+    }
+
+    .title2{
+        font-size: 0px;
+    }
+
+    .NameEnterprise{
+        font-size: 10px;
+    }
+
+    .titleNetworks{
+        font-size: 8px;   
+    }
+
+    .imgNetWork {
+        width: 18px;
+        margin-left: 6px;
+    }
+
+}

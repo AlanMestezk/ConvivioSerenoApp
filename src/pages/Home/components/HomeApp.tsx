@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import styles from './HomeApp.module.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import styles                         from './HomeApp.module.css'
+import { Swiper, SwiperSlide }        from 'swiper/react';
+import                                     'swiper/css';
+import                                     'swiper/css/navigation';
+import                                     'swiper/css/pagination';
 
 // Se precisar de módulos adicionais (por exemplo, navegação, paginação):
 import { Navigation, Pagination } from 'swiper/modules';
@@ -55,32 +55,27 @@ export const HomeApp: React.FC = ()=>{
 
             <Swiper
                 modules={[Navigation, Pagination]}
-                
                 spaceBetween={0}
                 slidesPerView={slidePerView}
                 navigation
                 pagination={{ clickable: true }}
                 className={styles.slider}
+                speed={1000} /* Define a velocidade de transição em 800ms para uma transição mais suave */
             >
-
                 {
                     data.slides.map(
-                        (item)=>(
-                            <SwiperSlide>
-                                
+                        (item) => (
+                            <SwiperSlide key={item.id}>
                                 <img 
                                     src={item.image}
                                     alt="Imagem de slide" 
                                     className={styles.imgSlide}
                                 />
-
                                 <strong className={styles.description}>{item.description}</strong>
-
                             </SwiperSlide>
                         )
                     )
                 }
-
             </Swiper>
 
             <section className={styles.content}>

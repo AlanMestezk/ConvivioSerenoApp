@@ -147,18 +147,32 @@ responsive
 
 }
 
-@media only screen and (max-width: 667px){
+@media only screen and (max-width: 667px) {
 
-    .imgSlide{
-        width: 650px;
-        height: 300px;
+    .imgSlide {
+        width: 100%; /* Ajusta a imagem para caber no container */
+        height: 240px;
         object-fit: cover;
     }
 
-    .description{
-        font-size: 8px;
-        top: 200px;
-        left: 60px;
+    .description {
+        font-size: 10px;
+        top: 180px;
+        left: 10px;
     }
 
+    .content {
+        padding: 16px;
+        max-width: 100%; /* Para ocupar a largura total da tela */
+    }
+
+    .textContent {
+        font-size: 1rem;
+        line-height: 1.7; /* Ajusta o espaçamento entre linhas para melhorar a leitura */
+        width: 100%;
+        margin: 0 auto;
+        text-align: justify;
+        hyphens: auto; /* Permite hifenização automática para evitar grandes espaços */
+        word-break: break-word; /* Quebra palavras longas para manter o fluxo do texto */
+    }
 }
