@@ -1,0 +1,318 @@
+.container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    animation: slideDown 3.0s ease-out;
+}
+
+.title{
+    font-size: 30px;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #2b4a94;
+}
+
+.content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+
+.contentAboutUs{
+    border-left: 5px solid #2b4a94;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titleAbout{
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    color: #223c77;
+    margin-bottom: 10px;
+}
+
+.textAbout{
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    color: #000000;
+}
+
+.sectionColab{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.titleColab{
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    color: #2b4a94;
+    margin-bottom: 10px;
+}
+
+.cardColab{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 15px;
+    padding: 12px;
+    border-radius: 150px;
+    border-left: 6px solid #2b4a94;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgColab{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 4px #2b4a94;;
+}
+
+.divData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px;
+    flex-direction: column;
+}
+
+.divName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    color: #2b4a94;
+}
+
+.formation{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.network{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 12px;
+    color: #000000;
+}
+
+.nameNetwork{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nameNetwork:hover{
+    color: #cabfbf;
+}
+
+
+.networkLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 12px;
+    color: #000000;
+}
+
+.imgNetwork{
+    width: 18px;
+}
+
+.nameNetwo{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+.serviceTitle{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 28px;
+    color: #000000;
+}
+
+.serviceText{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 12px;
+}
+
+/*animation*/
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-2%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+/*responsive*/
+
+@media only screen and (max-width: 1110px){
+    .cardColab{
+        width: 70%;
+        height: 100px;
+    }
+
+    .titleColab{
+        font-size: 15px;
+    }
+
+    .imgColab{
+        width: 100px;
+        height: 100px;
+    }
+
+    .name{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .formation{
+        font-size: 8px;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .network{
+
+        flex-direction: column;
+    }
+
+
+    .imgNetwork{
+        width: 10px;
+    }
+
+    .nameNetwork{
+        font-size: 10px;
+        
+    }
+
+    .nameNetwo{
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 667px){
+    .title{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .titleAbout{
+        font-size: 12px;
+    }
+
+    .textAbout{
+        font-size: 10px;
+    }
+
+    .titleColab{
+        font-size: 10px;
+        
+    }
+
+    .cardColab{
+        width: 84%;
+        height: 100px;
+    }
+
+    .imgColab{
+        width: 100px;
+        height: 100px;
+    }
+
+    .name{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .formation{
+        font-size: 8px;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .network{
+
+        flex-direction: column;
+    }
+
+
+    .imgNetwork{
+        width: 10px;
+    }
+
+    .nameNetwork{
+        font-size: 10px;
+        
+    }
+
+    .nameNetwo{
+        font-size: 10px;
+    }
+}
