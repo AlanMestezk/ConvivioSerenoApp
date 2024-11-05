@@ -2,7 +2,6 @@ import styles from './FooterStyles.module.css'
 
 //images
 import logoCS    from '../../assets/logo/imageLogoIcon.png'
-import facebook  from '../../assets/network/facebook.png'
 import whatsapp  from '../../assets/network/whatsapp.png'
 import instagram from '../../assets/network/instagram.png'
 import linkedin  from '../../assets/network/linkedin.png'
@@ -52,17 +51,8 @@ export const Footer: React.FC = ()=>{
 
                     <div className={styles.divNetworks}>
 
-                        <Link to='/'>
-                        
-                            <img 
-                                src={facebook} 
-                                alt="Rede social"
-                                className={styles.imgNetWork} 
-                            />
-                        </Link>
 
-
-                        <Link to='/'>
+                        <Link to='https://wa.me/5511916680204'>
                             <img 
                                 src={whatsapp}
                                 alt="Rede social"
@@ -72,7 +62,7 @@ export const Footer: React.FC = ()=>{
                         </Link>
 
 
-                        <Link to='/'>
+                        <Link to='https://www.instagram.com/dra.alexandraneves?igsh=eG93OGszOW8zeGgx&utm_source=qr'>
     
                             <img 
                                 src={instagram} 
@@ -82,7 +72,7 @@ export const Footer: React.FC = ()=>{
                         </Link>
 
 
-                        <Link to='/'>
+                        <Link to='https://www.linkedin.com/in/alexandra-neves-camas-071429294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>
     
                             <img 
                                 src={linkedin} 

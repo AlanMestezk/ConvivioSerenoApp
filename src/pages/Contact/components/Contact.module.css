@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    animation: slideDown 3.0s ease-out;
+}
+
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #2b4a94;
+    margin-bottom: 12px;
+}
+
+.imgContact{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: solid 3px #2b4a94;
+}
+
+.divInformation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information{
+    font-size: 15px;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #2b4a94;
+    margin-bottom: 12px;
+}
+
+.contentInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.containerInfo{
+    margin: 60px 0 12px 0;
+}
+
+.titleContent{
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #0e0f0f;
+}
+
+.contentText{
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+
+.paragraph{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.List{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+}
+
+.itemList{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    color: #0e0f0f;
+    margin-bottom: 12px;
+}
+
+/*Animation*/
+@keyframes slideDown {
+    from {
+      transform: translateY(-2%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1110px){
+
+    .titleContent{
+        font-size: 18px;
+    }
+
+    .contentText{
+        padding: 12px;
+    }
+    
+    .paragraph{
+
+        font-size: 12px;
+    }
+
+    .itemList{
+        font-size: 12px;
+    }
+
+}

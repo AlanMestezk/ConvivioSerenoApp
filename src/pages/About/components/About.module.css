@@ -16,12 +16,14 @@
     color: #2b4a94;
 }
 
-.content{
+.content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 40px;
-}
+    cursor: context-menu;
+    transition: max-width 0.6s ease, box-shadow 0.6s ease; /* Adicione esta linha */
+  }
 
 
 .contentAboutUs{
@@ -31,6 +33,12 @@
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.contentAboutUs:hover {
+    max-width: 806px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.39);
+}
+  
 
 .titleAbout{
     font-family: "Unbounded", serif;
@@ -65,7 +73,7 @@
     margin-bottom: 10px;
 }
 
-.cardColab{
+.cardColab {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,13 +87,19 @@
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
-.imgColab{
+.imgColab {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: solid 4px #2b4a94;;
+    border: solid 4px #2b4a94;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
+
+.imgColab:hover {
+    transform: scale(1.09);
+}
+
 
 .divData{
     display: flex;
@@ -280,7 +294,20 @@
         height: 100px;
     }
 
+    .contentAboutUs:hover{
+        border-left: 5px solid #2b4a94;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
     .imgColab{
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgColab:hover{
         width: 100px;
         height: 100px;
     }

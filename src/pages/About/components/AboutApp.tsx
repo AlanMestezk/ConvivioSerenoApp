@@ -45,8 +45,9 @@ export const AboutApp: React.FC = ()=>{
             name:'Alexandra Neves',
             formation: 'Gerontologia - Pós graduanda',
             picture: colab1,
-            wpp: '(11) 9 9999-9999',
+            wpp: '(11) 91668-0204',
             instagram: '@dra.alexandraneves',
+            urlWhatsapp: 'https://wa.me/5511916680204',
             urlIntagram: 'https://www.instagram.com/dra.alexandraneves?igsh=eG93OGszOW8zeGgx&utm_source=qr'
         },
         {
@@ -54,8 +55,9 @@ export const AboutApp: React.FC = ()=>{
             name:'Gabriela Gonçalves',
             formation: 'Gerontologia - Pós graduanda',
             picture: colab2,
-            wpp: '(11) 9 9999-9999',
+            wpp: '(11) 98843-6488',
             instagram: '@fisiogabiamancio',
+            urlWhatsapp: 'http://wa.me/5511988436488',
             urlIntagram: 'https://www.instagram.com/fisiogabiamancio?igsh=MWdpZHBvazUxbGZ6cQ%3D%3D'
         },
         {
@@ -63,8 +65,9 @@ export const AboutApp: React.FC = ()=>{
             name:'Juliane Cordeiro',
             formation: 'Gerontologia - Pós graduanda',
             picture: colab3,
-            wpp: '(11) 9 9999-9999',
+            wpp: '(11) 96739-6386',
             instagram: '@_juliane.c',
+            urlWhatsapp: 'http://wa.me/5511967396386',
             urlIntagram: 'https://www.instagram.com/_juliane.c?igsh=YTh2OGRyMzAwa2hv'
         }
     ]
@@ -74,7 +77,7 @@ export const AboutApp: React.FC = ()=>{
 
         <main className={styles.container}>
             
-            <h1 className={styles.title}>Quem Somos e No Que Acreditamos</h1>
+            <h1 className={styles.title}>⟣ Quem Somos e No Que Acreditamos ⟢</h1>
 
             <section className={styles.content}>
 
@@ -119,9 +122,11 @@ export const AboutApp: React.FC = ()=>{
                                 <div className={styles.divData}>
 
                                     <div className={styles.divName}>
+
                                         <h3 className={styles.name}>Dra. {item.name}</h3>
                                         
                                         <p className={styles.formation}>Formação: {item.formation}</p>
+                                        
                                     </div>
 
                                     <div className={styles.divNetworks}>
@@ -146,13 +151,17 @@ export const AboutApp: React.FC = ()=>{
 
                                             <div className={styles.networkLink}>
 
+                                                <Link to={item.urlWhatsapp} className={styles.link}>
+                                                
                                                     <img 
                                                         src={wpp} 
                                                         alt=""
                                                         className={styles.imgNetwork} 
                                                     />
 
-                                                    <span className={styles.nameNetwo}>{item.wpp}</span>
+                                                    <span className={styles.nameNetwork}>{item.wpp}</span>
+                                                </Link>
+
 
                                             </div>
 

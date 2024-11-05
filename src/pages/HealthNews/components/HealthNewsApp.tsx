@@ -45,7 +45,7 @@ export const HealthNewsApp: React.FC = ()=>{
 
             <section className={styles.sectionTitle}>
 
-                <h2 className={styles.title}>Notícias sobre saúde</h2>
+                <h2 className={styles.title}>⟣ Notícias sobre saúde ⟢</h2>
                 <strong className={styles.subtitle}>Se atualize por aqui</strong>
 
             </section>
