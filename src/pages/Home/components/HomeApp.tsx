@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles                         from './HomeApp.module.css'
 import { Swiper, SwiperSlide }        from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-
-// Se precisar de módulos adicionais (por exemplo, navegação, paginação):
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination }     from 'swiper/modules';
 
 import img1 from '../../../assets/slide/img1.jpg'
 import img2 from '../../../assets/slide/img2.jpg'
