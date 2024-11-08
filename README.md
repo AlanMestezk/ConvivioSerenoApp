@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/10279e1d-df2f-4afa-bf23-40cfcb54a034" alt="Convivio Sereno Logo" width="200"/>
+  <h1>**Convívio Sereno - Centro Dia Para Idosos**</h1>
+</div>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Convívio Sereno - Senior Day Centre** is an organisation dedicated to providing a secure, welcoming, and stimulating environment for the elderly population.
 
-## Expanding the ESLint configuration
+### The website showcases:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Institutional Values**: Discover the core principles and mission of Convívio Sereno.
+- **Our Professionals**: Learn about the qualified team members who care for and support our elderly clients.
+- **Contact Information**: Easily get in touch with us for further inquiries or assistance.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Developed by [Alan Mestezk](https://github.com/Alanmestezk) 🚀
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Feel free to visit the website at: [Convívio Sereno - Centro Dia Para Idosos](https://convivioserenocdpi.vercel.app)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The website is currently under development, with daily improvements and enhancements being made.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9151c6d4-d71a-4725-a1c9-f35f859f1a08" alt="Website Interface" width="600"/>
+</div>
